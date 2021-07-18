@@ -51,6 +51,10 @@ ol, ul {
 
 /* ------ Estilos adicionados por Raphael Ramalho ------- */
 
+html{
+    --tamanhoBoard: 400px;
+}
+
 body{
     margin: 0;
     background-image: url(img/background.jpg);
@@ -59,7 +63,7 @@ body{
 
 button:not(.square) {
     margin-bottom: 10px;
-    width: 8rem;
+    width: 9rem;
     box-shadow: 2px 2px #000000;
 }
 
@@ -73,14 +77,13 @@ button:hover{
 
 #root .game {
     display: grid;
-    grid-template-columns: calc((100vw - 400px)/2) 400px calc((100vw - 400px)/2);
+    grid-template-columns: calc((100vw - var(--tamanhoBoard))/2) var(--tamanhoBoard) calc((100vw - var(--tamanhoBoard))/2);
     grid-template-rows: 100px 400px calc(100vh - 500px);
 }
 
 #root .game .game-board{
     grid-column: 2/3;
     grid-row: 2/3;
-
 }
 
 #root .game .game-board > div:first-child{
