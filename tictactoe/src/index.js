@@ -139,4 +139,34 @@ function calculateWinner(squares) {
 // ---------------- Linhas extras adicionadas por Raphael Ramalho ---------------
 
 
+(() => {
+    const gameArea = document.querySelector(".game")
+
+    //Bloco para criar título acima do elemento div class="game-board"
+    const createTitle = () => {
+        const gameBoard = document.querySelector(".game-board")
+
+        const title = document.createElement("h1")
+        title.classList.add("game-title")
+        title.innerText = "Jogo da Velha"
+    
+        gameArea.insertBefore(title, gameBoard)
+    }
+
+    //Bloco para criar nota de rodapé do jogo
+    const createFooter = () => {
+        const footerArea = document.createElement("div")
+        footerArea.classList.add("game-footer") 
+        footerArea.innerHTML = "<p> Desenvolvido por Raphael Ramalho </p>"
+    
+        gameArea.appendChild(footerArea)
+    }
+
+    //Area de execução das funções criadas 
+    createTitle()
+    createFooter()
+})()
+
+
+
 
