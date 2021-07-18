@@ -53,26 +53,34 @@ ol, ul {
 
 body{
     margin: 0;
+    background-image: url(img/background.jpg);
+    color: white;
 }
 
 button:not(.square) {
     margin-bottom: 10px;
     width: 8rem;
+    box-shadow: 2px 2px #000000;
 }
 
 button:hover{
     cursor: pointer;
 }
 
+#root {
+    background-color: rgba(238, 130, 238, 0.356);
+}
+
 #root .game {
     display: grid;
     grid-template-columns: calc((100vw - 400px)/2) 400px calc((100vw - 400px)/2);
-    grid-template-rows: 100px 33.33vw calc(100vh - 33.33vw - 100px);
+    grid-template-rows: 100px 400px calc(100vh - 500px);
 }
 
 #root .game .game-board{
     grid-column: 2/3;
     grid-row: 2/3;
+
 }
 
 #root .game .game-board > div:first-child{
@@ -84,7 +92,17 @@ button:hover{
 }
 
 #root .game .game-board .board-row > .square{
+    width: 33.33%;
+    height: 100%;
+    font-size: 6rem;
+    font-weight: normal;
+    border-width: 4px;
     border-right: none;
+    background-color: transparent;
+    color: white;
+    border-color: white;
+    text-shadow: 5px 5px #000000;
+
 }
 
 #root .game .game-board .board-row > .square:first-child{
@@ -97,14 +115,6 @@ button:hover{
     border-bottom: none;
 }
 
-#root .game .game-board .board-row .square{
-    width: 33.33%;
-    height: 100%;
-    font-size: 6rem;
-    font-weight: normal;
-    border-width: 2px;
-}
-
 #root .game .game-info{
     grid-column: 3/3;
     grid-row: 2/3;
@@ -112,4 +122,5 @@ button:hover{
 
 #root .game .game-info > div:first-child{
     margin-left: 30px;
+    font-size: 1.5em;
 }
