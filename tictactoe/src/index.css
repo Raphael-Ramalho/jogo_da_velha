@@ -48,3 +48,55 @@ ol, ul {
 .game-info{
     margin-left: 20px;
 }
+
+/* ------ Estilos adicionados por Raphael Ramalho ------- */
+
+body{
+    margin: 0;
+}
+
+button:not(.square) {
+    margin-bottom: 10px;
+    width: 8rem;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.board-row{
+    height: 33.33%;
+}
+
+.square{
+    width: 33.33%;
+    height: 100%;
+    font-size: 3rem;
+    font-weight: normal;
+}
+
+.game {
+    display: grid;
+    grid-template-columns: calc((100vw - 400px)/2) 400px calc((100vw - 400px)/2);
+    grid-template-rows: 100px 33.33vw calc(100vh - 33.33vw - 100px);
+}
+
+.game-board{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.game-board > div:first-child{
+    height: 100%;
+}
+
+.game-info{
+    grid-column: 3/3;
+    grid-row: 2/3;
+}
+
+.game-info > div:first-child{
+    margin-left: 30px;
+}
+
+
