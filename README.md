@@ -19,8 +19,9 @@ Jogo da Velha desenvolvido durante etapa técnica do programa de estágio Sky.On
  <li>Execute o comando npm start
  <li>Divirta-se 😃
 </ul>
+<br>
 
-
+⌨️ com 💜 por Raphael Ramalho 
 
 
 
