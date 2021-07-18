@@ -136,4 +136,7 @@ function calculateWinner(squares) {
 }
 
 
+// ---------------- Linhas extras adicionadas por Raphael Ramalho ---------------
+
+
 
