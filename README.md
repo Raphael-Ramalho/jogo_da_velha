@@ -12,3 +12,15 @@ Jogo da Velha desenvolvido durante etapa técnica do programa de estágio Sky.On
  <li>CSS3
  <li>HTML5
 </ul>
+
+## 📋 Etapas para execução do Jogo
+<ul>
+ <li>Abra a pasta tictactoe no terminal
+ <li>Execute o comando npm start
+ <li>Divirta-se 😃
+</ul>
+
+
+
+
+
