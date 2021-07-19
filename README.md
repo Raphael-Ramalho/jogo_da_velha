@@ -3,7 +3,7 @@
 Jogo da Velha desenvolvido durante etapa técnica do programa de estágio Sky.One 2021.
 <br><br>
 
-<img src="tictactoe/src/img/screenShot.png">
+<img src="tictactoe/src/img/screen_shot.png">
 
 ## 🛠️ Construído com
 <ul>
