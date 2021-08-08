@@ -3,7 +3,7 @@
 Jogo da Velha desenvolvido durante etapa técnica do programa de estágio Sky.One 2021.
 <br><br>
 
-<img src="tictactoe/src/img/screen_shot.png">
+<img src="src/img/screen_shot.png">
 
 ## 🛠️ Construído com
 <ul>
@@ -15,7 +15,6 @@ Jogo da Velha desenvolvido durante etapa técnica do programa de estágio Sky.On
 
 ## 📋 Etapas para execução do Jogo
 <ul>
- <li>Abra a pasta tictactoe no terminal
  <li>Execute o comando npm start
  <li>Divirta-se 😃
 </ul>
